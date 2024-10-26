@@ -1,6 +1,8 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import logoTipo from "../../../public/images/logos/logoWhite.jpg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,18 +12,25 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="text-white text-2xl font-bold">
-          <Link href="/">Logo</Link>
+          <Link href="/">
+            <Image
+              width={60}
+              src={logoTipo}
+              alt="logoTipoDuque"
+              className="rounded-full hover:-rotate-45 hover:scale-110"
+            />
+          </Link>
         </div>
 
         {/* Desktop menu */}
-        <div className="hidden md:flex space-x-6">
-          <Link href="/about" className="text-gray-300 hover:text-white">
+        <div className="hidden md:flex space-x-6 font-semibold">
+          <Link href="/about" className="text-slate-600 hover:text-white">
             Sobre
           </Link>
-          <Link href="/services" className="text-gray-300 hover:text-white">
+          <Link href="/services" className="text-slate-600 hover:text-white">
             Fotos
           </Link>
-          <Link href="/contact" className="text-gray-300 hover:text-white">
+          <Link href="/contact" className="text-slate-600 hover:text-white">
             Contato
           </Link>
         </div>

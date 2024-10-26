@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'banner-one': "url('/images/banners/banner1.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
