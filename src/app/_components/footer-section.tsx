@@ -1,28 +1,23 @@
 import Link from "next/link";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaTwitter,
-  FaGithub,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { SiLinktree, SiWhatsapp } from "react-icons/si";
 
 function Footer() {
   return (
-    <footer className="text-white py-12 w-full px-10 md:px-20 lg:px-32">
+    <footer className="py-12 w-full px-10 md:px-20 lg:px-28 bg-black text-slate-200">
       <div className="w-full px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row lg:justify-between">
           {/* Section - Company */}
           <div className="mb-8 lg:mb-0">
-            <h2 className="text-xl font-bold text-gray-600">Dj Duque</h2>
-            <p className="mt-2 max-w-xs text-gray-400">
+            <h2 className="text-xl font-bold text-white">Dj Duque</h2>
+            <p className="mt-2 max-w-xs text-slate-600">
               Quer conhecer mais do meu trabalho
             </p>
             <div className="flex mt-4 space-x-4">
               <ul className="flex gap-6">
                 <li>
                   <Link
-                    href=""
+                    href="https://www.facebook.com/ohduqueee"
                     aria-label="Facebook"
                     className="text-gray-400 hover:text-white"
                   >
@@ -31,7 +26,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    href=""
+                    href="https://www.instagram.com/ohduquee/"
                     aria-label="Facebook"
                     className="text-gray-400 hover:text-white"
                   >
@@ -40,11 +35,11 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    href=""
+                    href="https://linktr.ee/ohduque"
                     aria-label="Facebook"
                     className="text-gray-400 hover:text-white"
                   >
-                    <FaTwitter size={30} />
+                    <SiLinktree size={30} />
                   </Link>
                 </li>
                 <li>
@@ -53,7 +48,7 @@ function Footer() {
                     aria-label="Facebook"
                     className="text-gray-400 hover:text-white"
                   >
-                    <FaYoutube size={30} />
+                    <SiWhatsapp size={30} />
                   </Link>
                 </li>
               </ul>
@@ -63,10 +58,10 @@ function Footer() {
           {/* Section - Links */}
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-3 lg:gap-16">
             <div className="flex flex-col">
-              <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-gray-600">
+              <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-white">
                 Eventos Festivais
               </h3>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 text-slate-600">
                 <li>OktoberFest Igrejinha 2022</li>
                 <li>Festival de Kerb 2022, 2023 e 2024</li>
                 <li>Festival de Kerb Dois irmão, 2024</li>
@@ -77,10 +72,10 @@ function Footer() {
             </div>
 
             <div>
-              <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-gray-600">
+              <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-white">
                 Parcerias
               </h3>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 text-gray-600">
                 <li>Uclub, Novo Hamburgo</li>
                 <li>Dream Club, Novo Hamburgo</li>
                 <li>Eros Lounge, Novo Hamburgo</li>
@@ -92,10 +87,10 @@ function Footer() {
             </div>
 
             <div>
-              <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-gray-600">
+              <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-white">
                 Parcerias
               </h3>
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 space-y-2 text-gray-600">
                 <li>Lets, Gramado</li>
                 <li>Allure, Dois irmãos</li>
                 <li>Haka, São Leopoldo</li>
@@ -108,10 +103,10 @@ function Footer() {
 
           {/* Section - Legal */}
           <div className="mt-8 lg:mt-0">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-600">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-white">
               DJ Residente
             </h3>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-4 space-y-2 text-gray-600">
               <li>INN Lounge Bar - NH</li>
               <li>OFF Club - NH</li>
               <li>Aliados do Samba, NH</li>
@@ -122,11 +117,28 @@ function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-12 border-t border-gray-700 pt-8 text-center text-gray-400">
-          <p>
-            © 2024 <Link href="#" className="hover:text-purple-600">Next Dev @cristhianschroer</Link>, Inc. Todos os direitos
-            reservados.
-          </p>
+        <div className="mt-12 border-t border-gray-700 pt-8 text-center text-white flex justify-center gap-5">
+          <div>
+            <p>© Dj Duque - cnpj: 46.178.343/0001-41</p>
+          </div>
+          <div>
+            <p>|</p>
+          </div>
+          <div>
+            <p>Todos os direitos reservados.</p>
+          </div>
+          <div>
+            <p>|</p>
+          </div>
+          <div>
+            <p>
+              © 2024{" "}
+              <Link href="#" className="hover:text-purple-600 underline">
+                Next Dev @cristhianschroer
+              </Link>
+              ,
+            </p>
+          </div>
         </div>
       </div>
     </footer>

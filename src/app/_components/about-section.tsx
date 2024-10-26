@@ -3,8 +3,8 @@ import djDuque from "../../../public/images/perfil/djDuque.jpg";
 
 export const About: React.FC = ({}) => {
   return (
-    <section className="w-full h-96 flex items-center justify-center px-10 md:px-32 lg:px-44">
-      <div className="flex-1">
+    <section className="w-full flex items-center justify-center px-10 md:px-20 lg:px-40 bg-black text-slate-200">
+      <div className="w-1/2">
         <h1 className="text-5xl">DJ Duque</h1>
         <p className="pt-5 text-xl">
           Olá vossa graça. Muito prazer! Eu sou o Duque Dj de Open Format, Tech
@@ -14,9 +14,9 @@ export const About: React.FC = ({}) => {
           festivais. É um grande prazer que me apresento para cada um de vocês.
         </p>
       </div>
-      <div className="flex-1 flex justify-center">
+      <div className="w-1/2 flex items-center justify-end pr-10">
         <Image
-          className="w-72 rotate-12 rounded-3xl shadow-xl"
+          className="rounded-3xl shadow-xl w-72 scale-125 rotate-12"
           alt="djDuque"
           src={djDuque}
         />

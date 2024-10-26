@@ -1,15 +1,31 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logoTipo from "../../../public/images/logos/logoWhite.jpg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Define a cor de fundo após rolar 50px
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="bg-black p-4">
-      <div className="container mx-auto flex items-center justify-between">
+    <nav
+      className={`fixed w-full transition-colors duration-300 ${
+        isScrolled ? "bg-black" : "bg-transparent"
+      }`}
+    >
+      <div className="container mx-auto flex items-center justify-between py-4 px-6 z-50">
         {/* Logo */}
         <div className="text-white text-2xl font-bold">
           <Link href="/">
@@ -70,7 +86,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden flex flex-col mt-4 space-y-2">
+        <div className="md:hidden flex flex-col items-center mt-4 space-y-2 bg-black">
           <Link href="/about" className="text-gray-300 hover:text-white">
             Sobre
           </Link>

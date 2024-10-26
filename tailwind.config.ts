@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'banner-one': "url('/images/banners/banner1.jpg')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'banner-two': "url('/images/banners/banner2.jpg')",
+        'banner-three': "url('/images/banners/banner.jpg')",
       },
       colors: {
         background: "var(--background)",
