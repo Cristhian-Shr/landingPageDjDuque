@@ -4,22 +4,24 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Contact: React.FC = () => {
   return (
-    <section className="bg-black text-slate-600 w-full py-16 flex flex-col items-center">
+    <section className="bg-black text-slate-600 w-full py-16 flex flex-col items-center px-10 md:px-20 xl:px-0">
       <div className="max-w-xl text-center space-y-4">
-        <h2 className="text-5xl font-bold">Reserve sua Data</h2>
-        <p className="text-lg">
+        <h2 className="text-2xl md:text-5xl font-bold">Reserve sua Data</h2>
+        <p className="text-base md:text-lg">
           Interessado em reservar uma data para seu evento ou show? Entre em
           contato conosco para garantir seu espaço e tirar suas dúvidas!
         </p>
-        <Link
-          target="_blank"
-          className="mt-6 inline-block bg-green-500 hover:bg-green-600
+        <div className="pt-5 md:pt-10">
+          <Link
+            target="_blank"
+            className="mt-6 inline-block bg-green-500 hover:bg-green-600
          text-white font-semibold py-4 px-4 rounded-full transition-all duration-300"
-          href="https://wa.me/5551999564170"
-          passHref
-        >
-          <FaWhatsapp className="text-5xl" />
-        </Link>
+            href="https://wa.me/5551999564170"
+            passHref
+          >
+            <FaWhatsapp className="text-5xl" />
+          </Link>
+        </div>
       </div>
     </section>
   );

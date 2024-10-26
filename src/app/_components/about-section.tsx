@@ -3,10 +3,10 @@ import djDuque from "../../../public/images/perfil/djDuque.jpg";
 
 export const About: React.FC = ({}) => {
   return (
-    <section className="w-full flex items-center justify-center px-10 md:px-20 lg:px-40 bg-black text-slate-200">
-      <div className="w-1/2">
-        <h1 className="text-5xl">DJ Duque</h1>
-        <p className="pt-5 text-xl">
+    <section className="w-full flex flex-col md:flex-row items-center justify-center px-10 md:px-20 lg:px-40 bg-black text-slate-600">
+      <div className="md:w-1/2">
+        <h1 className="text-3xl md:text-5xl pt-5 md:pt-0 text-center md:text-start font-bold">DJ Duque</h1>
+        <p className="pt-5 text-base md:text-xl">
           Olá vossa graça. Muito prazer! Eu sou o Duque Dj de Open Format, Tech
           House e Funk. Há 8 anos fazendo o melhor da cena, inovando e
           monstrando o que à de melhor na música . Residente no Rio Grande do
@@ -14,9 +14,9 @@ export const About: React.FC = ({}) => {
           festivais. É um grande prazer que me apresento para cada um de vocês.
         </p>
       </div>
-      <div className="w-1/2 flex items-center justify-end pr-10">
+      <div className="md:w-1/2 flex items-center justify-center md:justify-end pr-10 pt-16 md:pt-0">
         <Image
-          className="rounded-3xl shadow-xl w-72 scale-125 rotate-12"
+          className="rounded-3xl shadow-xl w-40 md:w-72 scale-125 rotate-12"
           alt="djDuque"
           src={djDuque}
         />

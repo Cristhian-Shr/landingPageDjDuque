@@ -5,12 +5,12 @@ import { SiLinktree, SiWhatsapp } from "react-icons/si";
 function Footer() {
   return (
     <footer className="py-12 w-full px-10 md:px-20 lg:px-28 bg-black text-slate-200">
-      <div className="w-full px-6 lg:px-8">
+      <div className="w-full lg:px-8">
         <div className="flex flex-col lg:flex-row lg:justify-between">
           {/* Section - Company */}
           <div className="mb-8 lg:mb-0">
-            <h2 className="text-xl font-bold text-white">Dj Duque</h2>
-            <p className="mt-2 max-w-xs text-slate-600">
+            <h2 className="text-xl font-bold text-white text-center md:text-start">Dj Duque</h2>
+            <p className="mt-2 max-w-xs text-slate-600 text-center md:text-start">
               Quer conhecer mais do meu trabalho
             </p>
             <div className="flex mt-4 space-x-4">
@@ -117,7 +117,7 @@ function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-12 border-t border-gray-700 pt-8 text-center text-white flex justify-center gap-5">
+        <div className="mt-12 border-t border-gray-700 pt-8 text-center text-white flex justify-center gap-5 px-10 flex-col md:flex-row">
           <div>
             <p>© Dj Duque - cnpj: 46.178.343/0001-41</p>
           </div>
@@ -133,7 +133,7 @@ function Footer() {
           <div>
             <p>
               © 2024{" "}
-              <Link href="#" className="hover:text-purple-600 underline">
+              <Link href="https://next-dev-cristhianschroer.vercel.app/" className="hover:text-purple-600 underline">
                 Next Dev @cristhianschroer
               </Link>
               ,

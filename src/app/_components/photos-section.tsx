@@ -24,8 +24,8 @@ const images = [
 
 export function Carousel() {
   return (
-    <section className="w-full h-[700px] bg-black text-slate-200">
-      <h1 className="text-center text-5xl pt-10 font-bold">Galeria de fotos</h1>
+    <section className="w-full h-[700px] bg-black text-slate-600 px-8 md:px-0">
+      <h1 className="text-center text-2xl md:text-5xl pt-10 font-bold">Galeria de fotos</h1>
       <div className="w-full max-w-screen-lg mx-auto py-10 relative">
         <Swiper
           modules={[Pagination, Navigation, Autoplay]}
