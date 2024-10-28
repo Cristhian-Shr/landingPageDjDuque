@@ -20,7 +20,8 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav
+    <div className="z-50">
+      <nav
       className={`fixed w-full transition-colors duration-300 ${
         isScrolled ? "bg-black" : "bg-transparent"
       }`}
@@ -99,5 +100,6 @@ export default function Navbar() {
         </div>
       )}
     </nav>
+    </div>
   );
 }
