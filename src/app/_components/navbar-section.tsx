@@ -58,7 +58,7 @@ export default function Navbar() {
             className="text-gray-300 hover:text-white focus:outline-none"
           >
             <svg
-              className="w-6 h-6"
+              className="w-12 h-12"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

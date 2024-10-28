@@ -13,7 +13,7 @@ function Footer() {
             <p className="mt-2 max-w-xs text-slate-600 text-center md:text-start">
               Quer conhecer mais do meu trabalho
             </p>
-            <div className="flex mt-4 space-x-4">
+            <div className="flex mt-4 space-x-4 justify-center md:justify-start">
               <ul className="flex gap-6">
                 <li>
                   <Link
@@ -136,7 +136,6 @@ function Footer() {
               <Link href="https://next-dev-cristhianschroer.vercel.app/" className="hover:text-purple-600 underline">
                 Next Dev @cristhianschroer
               </Link>
-              ,
             </p>
           </div>
         </div>
