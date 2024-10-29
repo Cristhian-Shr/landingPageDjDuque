@@ -14,7 +14,7 @@ export const About: React.FC = ({}) => {
           festivais. É um grande prazer que me apresento para cada um de vocês.
         </p>
       </div>
-      <div className="md:w-1/2 flex items-center justify-center md:justify-end pr-10 pt-16 md:pt-0">
+      <div className="md:w-1/2 flex items-center justify-center md:justify-end pr-10 pt-16 md:pt-0 z-40">
         <Image
           className="rounded-3xl shadow-xl w-40 md:w-72 scale-125 rotate-12"
           alt="djDuque"

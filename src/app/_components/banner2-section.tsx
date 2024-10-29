@@ -1,9 +1,17 @@
-export function BannerTwo() {
-    return (
-      <section className="bg-banner-two bg-cover bg-fixed w-full h-screen flex text-slate-600 px-10
-         items-center min-h-[90vh] bg-center">  
-      </section>
-    );
-  }
+import Image from "next/image";
+import bannerTwo from "../../../public/images/banners/banner2.jpg";
 
-  
+export function BannerTwo() {
+  return (
+    <section className="relative w-full min-h-[90vh]">
+      <Image
+        alt="bannerOne"
+        src={bannerTwo}
+        layout="fill" 
+        quality={100}
+        objectFit="cover" 
+        className="inset-0 fixed"
+      />
+    </section>
+  );
+}

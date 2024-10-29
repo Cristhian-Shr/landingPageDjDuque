@@ -1,7 +1,17 @@
+import Image from "next/image";
+import bannerThree from "../../../public/images/banners/banner.jpg";
+
 export function BannerThree() {
-    return (
-      <section className="bg-banner-three bg-cover bg-fixed w-full h-screen flex text-slate-600 px-10
-         items-center min-h-[90vh] bg-center">  
-      </section>
-    );
-  }
+  return (
+    <section className="relative w-full min-h-[90vh] bg-fixed">
+      <Image
+        alt="bannerThree"
+        src={bannerThree}
+        layout="fill" 
+        quality={100}
+        objectFit="cover" 
+        className="absolute inset-0"
+      />
+    </section>
+  );
+}

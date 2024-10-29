@@ -56,7 +56,7 @@ export default function Navbar() {
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-gray-300 hover:text-white focus:outline-none"
+            className="text-gray-300 hover:text-white focus:outline-none flex items-center justify-center"
           >
             <svg
               className="w-12 h-12"
@@ -87,15 +87,15 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden flex flex-col items-center mt-4 space-y-2 bg-black">
-          <Link href="/about" className="text-gray-300 hover:text-white">
-            Sobre
+        <div className="md:hidden flex flex-col items-center mt-4 space-y-4 bg-transparent">
+          <Link href="/about" className="text-slate-400 hover:text-slate-100 text-xl font-bold">
+            SOBRE
           </Link>
-          <Link href="/services" className="text-gray-300 hover:text-white">
-            Fotos
+          <Link href="/services" className="text-slate-400 hover:text-slate-100 text-xl font-bold">
+            FOTOS
           </Link>
-          <Link href="/contact" className="text-gray-300 hover:text-white">
-            Contato
+          <Link href="/contact" className="text-slate-400 hover:text-slate-100 text-xl font-bold">
+            CONTATO
           </Link>
         </div>
       )}
