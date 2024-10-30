@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Contact: React.FC = () => {
   return (
-    <section className="bg-black text-slate-600 w-full py-16 flex flex-col items-center px-10 md:px-20 xl:px-0">
+    <section className="bg-black text-slate-600 w-full py-16 flex flex-col items-center px-10 md:px-20 xl:px-0" id="contact">
       <div className="max-w-xl text-center space-y-4">
         <h2 className="text-2xl md:text-5xl font-bold">Reserve sua Data</h2>
         <p className="text-base md:text-lg">

@@ -41,13 +41,13 @@ export default function Navbar() {
 
         {/* Desktop menu */}
         <div className="hidden md:flex space-x-6 font-semibold">
-          <Link href="/about" className="text-slate-600 hover:text-white">
+          <Link href="#about" className="text-slate-600 hover:text-white">
             Sobre
           </Link>
-          <Link href="/services" className="text-slate-600 hover:text-white">
+          <Link href="#photos" className="text-slate-600 hover:text-white">
             Fotos
           </Link>
-          <Link href="/contact" className="text-slate-600 hover:text-white">
+          <Link href="#contact" className="text-slate-600 hover:text-white">
             Contato
           </Link>
         </div>

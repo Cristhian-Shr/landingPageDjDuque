@@ -14,7 +14,7 @@ function Footer() {
               Quer conhecer mais do meu trabalho
             </p>
             <div className="flex mt-4 space-x-4 justify-center md:justify-start">
-              <ul className="flex gap-6">
+              <ul className="flex gap-6 md:gap-3 gl:gap-6">
                 <li>
                   <Link
                     href="https://www.facebook.com/ohduqueee"
@@ -56,10 +56,10 @@ function Footer() {
           </div>
 
           {/* Section - Links */}
-          <div className="grid grid-cols-2 gap-8 lg:grid-cols-3 lg:gap-16">
+          <div className="grid grid-cols-2 gap-8 lg:grid-cols-3 lg:gap-20">
             <div className="flex flex-col">
-              <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-white">
-                Eventos Festivais
+              <h3 className="text-sm xl:text-base font-semibold uppercase tracking-wide text-white">
+                Eventos / Festivais
               </h3>
               <ul className="mt-4 space-y-2 text-slate-600">
                 <li>OktoberFest Igrejinha 2022</li>
