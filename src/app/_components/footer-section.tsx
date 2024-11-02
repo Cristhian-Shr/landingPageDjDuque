@@ -10,7 +10,7 @@ function Footer() {
           {/* Section - Company */}
           <div className="mb-8 lg:mb-0">
             <div className="flex flex-col items-center">
-              <h2 className="text-xl font-bold text-white text-center md:text-start">
+              <h2 className="text-xl font-bold text-white">
                 Dj Duque
               </h2>
               <p className="mt-2 max-w-xs text-slate-600 text-center lg:text-start py-2">
@@ -60,7 +60,7 @@ function Footer() {
           </div>
 
           {/* Section - eventos e festivais */}
-          <div className="grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-20">
+          <div className="grid grid-cols-2 lg:grid-cols-4">
             <div className="flex flex-col">
               <h3 className="text-sm xl:text-base font-semibold uppercase tracking-wide text-white">
                 Eventos / Festivais
@@ -75,7 +75,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div>
+            <div className="flex flex-col">
               <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-white">
                 Parcerias
               </h3>
@@ -90,7 +90,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div>
+            <div className="flex flex-col">
               <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-white">
                 Parcerias
               </h3>
@@ -104,20 +104,19 @@ function Footer() {
               </ul>
             </div>
 
-            <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-white">
-              DJ Residente
-            </h3>
-            <ul className="mt-4 space-y-2 text-gray-600">
-              <li>INN Lounge Bar - NH</li>
-              <li>OFF Club - NH</li>
-              <li>Aliados do Samba, NH</li>
-              <li>MOVVE produtora - NH</li>
-              <li>Complexo CCE - Sapucaia do Sul</li>
-            </ul>
+            <div className="flex flex-col">
+            <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-white">
+                DJ Residente
+              </h3>
+              <ul className="mt-4 space-y-2 text-gray-600">
+                <li>INN Lounge Bar - NH</li>
+                <li>OFF Club - NH</li>
+                <li>Aliados do Samba, NH</li>
+                <li>MOVVE produtora - NH</li>
+                <li>Complexo CCE - Sapucaia do Sul</li>
+              </ul>
+            </div>
           </div>
-          </div>
-          
         </div>
 
         {/* Footer Bottom */}
