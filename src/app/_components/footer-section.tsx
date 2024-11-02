@@ -9,11 +9,15 @@ function Footer() {
         <div className="flex flex-col lg:flex-row lg:justify-between">
           {/* Section - Company */}
           <div className="mb-8 lg:mb-0">
-            <h2 className="text-xl font-bold text-white text-center md:text-start">Dj Duque</h2>
-            <p className="mt-2 max-w-xs text-slate-600 text-center md:text-start">
-              Quer conhecer mais do meu trabalho
-            </p>
-            <div className="flex mt-4 space-x-4 justify-center md:justify-start">
+            <div className="flex flex-col items-center">
+              <h2 className="text-xl font-bold text-white text-center md:text-start">
+                Dj Duque
+              </h2>
+              <p className="mt-2 max-w-xs text-slate-600 text-center lg:text-start py-2">
+                Quer conhecer mais do meu trabalho
+              </p>
+            </div>
+            <div className="flex mt-4 space-x-4 justify-center lg:justify-start">
               <ul className="flex gap-6 md:gap-3 gl:gap-6">
                 <li>
                   <Link
@@ -55,8 +59,8 @@ function Footer() {
             </div>
           </div>
 
-          {/* Section - Links */}
-          <div className="grid grid-cols-2 gap-8 lg:grid-cols-3 lg:gap-20">
+          {/* Section - eventos e festivais */}
+          <div className="grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-20">
             <div className="flex flex-col">
               <h3 className="text-sm xl:text-base font-semibold uppercase tracking-wide text-white">
                 Eventos / Festivais
@@ -99,10 +103,8 @@ function Footer() {
                 <li>Yves Club, Santa Cruz do Sul</li>
               </ul>
             </div>
-          </div>
 
-          {/* Section - Legal */}
-          <div className="mt-8 lg:mt-0">
+            <div>
             <h3 className="text-sm font-semibold uppercase tracking-wide text-white">
               DJ Residente
             </h3>
@@ -114,6 +116,8 @@ function Footer() {
               <li>Complexo CCE - Sapucaia do Sul</li>
             </ul>
           </div>
+          </div>
+          
         </div>
 
         {/* Footer Bottom */}
@@ -133,7 +137,10 @@ function Footer() {
           <div>
             <p>
               © 2024{" "}
-              <Link href="https://next-dev-cristhianschroer.vercel.app/" className="hover:text-purple-600 underline">
+              <Link
+                href="https://next-dev-cristhianschroer.vercel.app/"
+                className="hover:text-purple-600 underline"
+              >
                 Next Dev @cristhianschroer
               </Link>
             </p>
