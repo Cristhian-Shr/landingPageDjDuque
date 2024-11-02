@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
-// Imagens do carrossel
 const images = [
   { id: 1, src: "/images/photoSection/slidePhoto.jpg", alt: "Image 1" },
   { id: 2, src: "/images/photoSection/slidePhoto1.jpg", alt: "Image 2" },

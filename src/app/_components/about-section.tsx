@@ -1,5 +1,5 @@
 import Image from "next/image";
-import djDuque from "../../../public/images/perfil/djDuque.jpg";
+import djDuque from "../../../public/images/perfil/djDuquePerfil.jpeg";
 
 export const About: React.FC = ({}) => {
   return (
