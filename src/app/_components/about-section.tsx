@@ -3,7 +3,8 @@ import djDuque from "../../../public/images/perfil/djDuquePerfil.jpeg";
 
 export const About: React.FC = ({}) => {
   return (
-    <section className="w-full flex flex-col md:flex-row items-center justify-center px-10 md:px-20 lg:px-40 bg-black text-slate-600" id="about">
+    <section className="w-full flex flex-col md:flex-row items-center justify-center px-10 md:px-20 lg:px-40
+     bg-black text-slate-600" id="about">
       <div className="md:w-1/2">
         <h1 className="text-xl md:text-3xl xl:text-5xl pt-5 md:pt-0 text-center md:text-start font-bold">DJ Duque</h1>
         <p className="pt-5 text-sm md:text-base xl:text-xl">
