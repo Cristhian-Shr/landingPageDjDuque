@@ -110,10 +110,8 @@ function Footer() {
               </h3>
               <ul className="mt-4 space-y-2 text-gray-600">
                 <li>INN Lounge Bar - NH</li>
-                <li>OFF Club - NH</li>
                 <li>Aliados do Samba, NH</li>
                 <li>MOVVE produtora - NH</li>
-                <li>Complexo CCE - Sapucaia do Sul</li>
               </ul>
             </div>
           </div>
