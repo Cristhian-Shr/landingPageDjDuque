@@ -11,6 +11,7 @@ const config: Config = {
   	extend: {
 		backgroundImage: {
 			'hero1': "url('../../public/images/banners/banner3.jpeg')",
+			'heroCel': "url('../../public/images/novasFotos/perfilOne.jpg')",
 		  },
   		colors: {
   			background: 'hsl(var(--background))',
