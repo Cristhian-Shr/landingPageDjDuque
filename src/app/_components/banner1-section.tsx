@@ -1,8 +1,7 @@
 export function BannerOne() {
   return (
     <section
-      className="w-full min-h-screen sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px] 
-      xl:min-h-[800px] 2xl:min-h-[900px] bg-fixed bg-cover bg-no-repeat bg-center md:bg-hero1 bg-heroCel"
+      className="w-full min-h-[80vh] md:min-h-[90vh] bg-fixed md:bg-cover bg-no-repeat md:bg-center md:bg-hero1 bg-heroCel bg-contain"
     >
     </section>
   );
