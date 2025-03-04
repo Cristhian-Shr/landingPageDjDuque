@@ -40,7 +40,7 @@ export function PhotoGallery() {
         {images.map((image, index) => (
           <div
             key={image.id}
-            className="relative w-full h-44 md:h-48 lg:h-60 overflow-hidden rounded-md cursor-pointer"
+            className="relative w-full h-44 md:h-48 lg:h-72 overflow-hidden rounded-md cursor-pointer"
             onClick={() => setZoomedImage(index)}
           >
             <Image src={image.src} alt={image.alt} layout="fill" objectFit="cover" className="rounded-md" />
