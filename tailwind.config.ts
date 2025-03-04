@@ -11,7 +11,13 @@ const config: Config = {
   	extend: {
 		backgroundImage: {
 			'hero1': "url('../../public/images/banners/banner3.jpeg')",
+			'hero2': "url('../../public/images/banners/banner4.jpeg')",
+			'hero3': "url('../../public/images/banners/banner7.jpeg')",
+			'hero4': "url('../../public/images/banners/banner6.jpeg')",
 			'heroCel': "url('../../public/images/novasFotos/perfilOne.jpg')",
+			'heroCelTwo': "url('../../public/images/novasFotos/perfilTwo.jpg')",
+			'heroCelThree': "url('../../public/images/novasFotos/perfilThree.jpg')",
+			'heroCelFour': "url('../../public/images/novasFotos/perfilFour.jpg')",
 		  },
   		colors: {
   			background: 'hsl(var(--background))',
