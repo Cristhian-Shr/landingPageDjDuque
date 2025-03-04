@@ -1,12 +1,7 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const images = [
   { id: 1, src: "/images/photoSection/slidePhoto.jpg", alt: "Image 1" },
@@ -21,36 +16,63 @@ const images = [
   { id: 10, src: "/images/photoSection/slidePhoto9.jpg", alt: "Image 10" },
 ];
 
-export function Carousel() {
+export function PhotoGallery() {
+  const [zoomedImage, setZoomedImage] = useState<number | null>(null);
+  const handleNext = () => {
+    if (zoomedImage !== null) {
+      setZoomedImage((prev) => (prev !== null && prev < images.length - 1 ? prev + 1 : 0));
+    }
+  };
+  const handlePrev = () => {
+    if (zoomedImage !== null) {
+      setZoomedImage((prev) => (prev !== null && prev > 0 ? prev - 1 : images.length - 1));
+    }
+  };
+  
+  let touchStartX = 0;
+  
   return (
-    <section className="w-full h-[700px] bg-black text-slate-600 px-8 md:px-0">
-      <h1 className="text-center text-2xl md:text-5xl pt-10 font-bold" id="photos">Galeria de fotos</h1>
-      <div className="w-full max-w-screen-lg mx-auto py-10 relative">
-        <Swiper
-          modules={[Pagination, Navigation, Autoplay]}
-          pagination={{ clickable: true }}
-          navigation
-          autoplay={{ delay: 3000 }}
-          loop={true}
-          spaceBetween={30}
-          slidesPerView={1}
-          className="h-[400px]"
-        >
-          {images.map((image) => (
-            <SwiperSlide key={image.id}>
-              <div className="relative w-full h-[400px]">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-md"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+    <section className="w-full bg-black text-slate-600 px-8 md:px-0 py-10">
+      <h1 className="text-center text-2xl md:text-5xl font-bold mb-10" id="photos">
+        Galeria de Fotos
+      </h1>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-screen-lg mx-auto">
+        {images.map((image, index) => (
+          <div
+            key={image.id}
+            className="relative w-full h-40 md:h-48 lg:h-56 overflow-hidden rounded-md cursor-pointer"
+            onClick={() => setZoomedImage(index)}
+          >
+            <Image src={image.src} alt={image.alt} layout="fill" objectFit="cover" className="rounded-md" />
+          </div>
+        ))}
       </div>
+
+      {zoomedImage !== null && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          onClick={() => setZoomedImage(null)}
+          onTouchStart={(e) => (touchStartX = e.touches[0].clientX)}
+          onTouchEnd={(e) => {
+            const touchEndX = e.changedTouches[0]?.clientX;
+            if (touchEndX !== undefined) {
+              if (touchStartX - touchEndX > 50) handleNext();
+              if (touchEndX - touchStartX > 50) handlePrev();
+            }
+          }}
+        >
+          <div className="relative w-11/12 max-w-4xl h-auto">
+            <Image
+              src={images[zoomedImage].src}
+              alt={images[zoomedImage].alt}
+              layout="responsive"
+              width={800}
+              height={600}
+              className="rounded-md"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }

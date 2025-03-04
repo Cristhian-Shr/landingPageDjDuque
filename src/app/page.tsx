@@ -6,7 +6,7 @@ import { BannerFour } from "./_components/banner4-section";
 import Contact from "./_components/contatc-section";
 import Footer from "./_components/footer-section";
 import Navbar from "./_components/navbar-section";
-import { Carousel } from "./_components/photos-section";
+import { PhotoGallery } from "./_components/photos-section";
 import { WhatsAppButton } from "./_components/whatsappBtn";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
       <BannerTwo />
       <Contact />
       <BannerThree />
-      <Carousel />
+      <PhotoGallery />
       <BannerFour />
       <Footer />
     </main>
