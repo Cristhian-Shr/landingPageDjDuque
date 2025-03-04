@@ -32,15 +32,15 @@ export function PhotoGallery() {
   let touchStartX = 0;
   
   return (
-    <section className="w-full bg-black text-slate-600 px-8 md:px-0 py-10">
+    <section className="w-full bg-black text-slate-600 px-8 md:px-0 py-14">
       <h1 className="text-center text-2xl md:text-5xl font-bold mb-10" id="photos">
         Galeria de Fotos
       </h1>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-screen-lg mx-auto">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 max-w-screen-xl mx-auto">
         {images.map((image, index) => (
           <div
             key={image.id}
-            className="relative w-full h-40 md:h-48 lg:h-56 overflow-hidden rounded-md cursor-pointer"
+            className="relative w-full h-44 md:h-48 lg:h-60 overflow-hidden rounded-md cursor-pointer"
             onClick={() => setZoomedImage(index)}
           >
             <Image src={image.src} alt={image.alt} layout="fill" objectFit="cover" className="rounded-md" />
