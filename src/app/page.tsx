@@ -1,4 +1,5 @@
 import { About } from "./_components/about-section";
+import { Banner0 } from "./_components/banner0";
 import { BannerOne } from "./_components/banner1-section";
 import { BannerTwo } from "./_components/banner2-section";
 import { BannerThree } from "./_components/banner3-section";
