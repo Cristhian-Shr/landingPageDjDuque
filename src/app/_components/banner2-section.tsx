@@ -1,6 +1,6 @@
 export function BannerTwo() {
   return (
-    <div className="w-full h-screen min-h-screen bg-fixed bg-cover bg-center bg-no-repeat bg-heroCelTwo md:bg-hero2">
+    <div className="w-full h-screen min-h-screen bg-fixed bg-contain md:bg-cover bg-center bg-no-repeat bg-heroCelTwo md:bg-hero2">
     </div>
   );
 }
