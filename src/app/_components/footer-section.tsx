@@ -13,11 +13,11 @@ function Footer() {
               <h2 className="text-xl font-bold text-white">
                 Dj Duque
               </h2>
-              <p className="mt-2 max-w-xs text-slate-600 text-center lg:text-start py-2">
+              <p className="mt-2 text-slate-600 text-center py-2">
                 Quer conhecer mais do meu trabalho
               </p>
             </div>
-            <div className="flex mt-4 space-x-4 justify-center lg:justify-start">
+            <div className="flex mt-4 space-x-4 justify-center">
               <ul className="flex gap-6 md:gap-3 gl:gap-6">
                 <li>
                   <Link
@@ -60,8 +60,8 @@ function Footer() {
           </div>
 
           {/* Section - eventos e festivais */}
-          <div className="grid grid-cols-2 lg:grid-cols-4">
-            <div className="flex flex-col">
+          <div className="grid grid-cols-2 xl:grid-cols-4">
+            <div className="flex flex-col  text-center">
               <h3 className="text-sm xl:text-base font-semibold uppercase tracking-wide text-white">
                 Eventos / Festivais
               </h3>
@@ -75,7 +75,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col text-center">
               <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-white">
                 Parcerias
               </h3>
@@ -90,7 +90,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col text-center">
               <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-white">
                 Parcerias
               </h3>
@@ -104,8 +104,8 @@ function Footer() {
               </ul>
             </div>
 
-            <div className="flex flex-col">
-            <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-white">
+            <div className="flex flex-col text-center pt-5 xl:pt-0">
+              <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-white">
                 DJ Residente
               </h3>
               <ul className="mt-4 space-y-2 text-gray-600">
