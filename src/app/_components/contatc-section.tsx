@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaLink, FaWhatsapp } from "react-icons/fa";
+import { SiChainlink } from "react-icons/si";
 
 const Contact: React.FC = () => {
   return (
@@ -20,6 +21,13 @@ const Contact: React.FC = () => {
             passHref
           >
             <FaWhatsapp className="text-5xl" />
+          </Link>
+        </div>
+        <div className="pt-20">
+          <Link href='https://linktr.ee/ohduque' target="_blank" className="hover:text-slate-400 text-2xl md:text-5xl font-bold flex flex-col items-center gap-10">
+          Duque - PRESSKIT
+          <FaLink />
+
           </Link>
         </div>
       </div>

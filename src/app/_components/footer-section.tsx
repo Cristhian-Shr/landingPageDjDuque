@@ -24,6 +24,7 @@ function Footer() {
                     href="https://www.facebook.com/ohduqueee"
                     aria-label="Facebook"
                     className="text-gray-400 hover:text-white"
+                    target="_blank"
                   >
                     <FaFacebook size={30} />
                   </Link>
@@ -33,6 +34,7 @@ function Footer() {
                     href="https://www.instagram.com/ohduquee/"
                     aria-label="Facebook"
                     className="text-gray-400 hover:text-white"
+                    target="_blank"
                   >
                     <FaInstagram size={30} />
                   </Link>
@@ -42,15 +44,17 @@ function Footer() {
                     href="https://linktr.ee/ohduque"
                     aria-label="Facebook"
                     className="text-gray-400 hover:text-white"
+                    target="_blank"
                   >
                     <SiLinktree size={30} />
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href=""
+                    href="https://www.facebook.com/ohduquee"
                     aria-label="Facebook"
                     className="text-gray-400 hover:text-white"
+                    target="_blank"
                   >
                     <SiWhatsapp size={30} />
                   </Link>

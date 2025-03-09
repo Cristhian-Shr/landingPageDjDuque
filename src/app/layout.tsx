@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Site Dj Duque",
+  title: "Dj Duque",
   description: "create for Ártemis Digital",
   viewport: "width=device-width, initial-scale=1.0",
 };
