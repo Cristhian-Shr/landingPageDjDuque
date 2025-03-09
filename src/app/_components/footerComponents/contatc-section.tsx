@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
           </Link>
         </div>
         <div className="pt-20">
-          <Link href='https://linktr.ee/ohduque' target="_blank" className="hover:text-slate-400 text-2xl md:text-5xl font-bold flex flex-col items-center gap-10">
+          <Link href='https://drive.google.com/drive/folders/1Mawkvt-9TrMyX8FeLChO3GjW5_vmyzYK' target="_blank" className="hover:text-slate-400 text-2xl md:text-5xl font-bold flex flex-col items-center gap-10">
             Duque - PRESSKIT
             <FaLink />
           </Link>

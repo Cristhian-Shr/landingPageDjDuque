@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLink } from "react-icons/fa";
 import { SiLinktree, SiWhatsapp } from "react-icons/si";
 
 function Footer() {
@@ -57,6 +57,14 @@ function Footer() {
                     target="_blank"
                   >
                     <SiWhatsapp size={30} />
+                  </Link>
+                </li>
+                <li>
+                  <Link href='https://drive.google.com/drive/folders/1Mawkvt-9TrMyX8FeLChO3GjW5_vmyzYK'
+                    target="_blank"
+                    aria-label="presskit"
+                    className="text-gray-400 hover:text-white">
+                    <FaLink size={30} />
                   </Link>
                 </li>
               </ul>
