@@ -24,9 +24,8 @@ const Contact: React.FC = () => {
         </div>
         <div className="pt-20">
           <Link href='https://linktr.ee/ohduque' target="_blank" className="hover:text-slate-400 text-2xl md:text-5xl font-bold flex flex-col items-center gap-10">
-          Duque - PRESSKIT
-          <FaLink />
-
+            Duque - PRESSKIT
+            <FaLink />
           </Link>
         </div>
       </div>
