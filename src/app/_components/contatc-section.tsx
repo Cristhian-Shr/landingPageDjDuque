@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import { FaLink, FaWhatsapp } from "react-icons/fa";
-import { SiChainlink } from "react-icons/si";
 
 const Contact: React.FC = () => {
   return (
