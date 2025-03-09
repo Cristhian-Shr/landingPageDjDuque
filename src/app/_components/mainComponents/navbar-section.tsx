@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import logoTipo from "../../../public/images/logos/logoWhite.jpg";
+import logoTipo from "../../../../public/images/logos/logoWhite.jpg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -88,13 +88,13 @@ export default function Navbar() {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden flex flex-col items-center mt-4 space-y-4 bg-transparent">
-          <Link href="/about" className="text-slate-400 hover:text-slate-100 text-xl font-bold">
+          <Link href="#about" className="text-slate-400 hover:text-slate-100 text-xl font-bold">
             SOBRE
           </Link>
-          <Link href="/services" className="text-slate-400 hover:text-slate-100 text-xl font-bold">
+          <Link href="#photos" className="text-slate-400 hover:text-slate-100 text-xl font-bold">
             FOTOS
           </Link>
-          <Link href="/contact" className="text-slate-400 hover:text-slate-100 text-xl font-bold">
+          <Link href="#contact" className="text-slate-400 hover:text-slate-100 text-xl font-bold">
             CONTATO
           </Link>
         </div>
